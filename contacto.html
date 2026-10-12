@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.E.M. Gubernamental 21 de Octubre - Contacto</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRhyFVXy36-0Xowb_FhqSNozcf6DiXn_WOzXtItIlWNaGZz4V4J1TVDV0&s=10" type="image/x-icon">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fcf8f2; color: #333; }
+        header { background-color: #c8102e; color: white; padding: 25px; text-align: center; border-bottom: 5px solid #f5b301; }
+        
+        .logo-escudo { 
+            width: 90px; 
+            height: 90px; 
+            object-fit: contain; 
+            border-radius: 50%; 
+            background-color: white; 
+            padding: 3px; 
+            margin-bottom: 10px; 
+            border: 2px solid #f5b301; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .logo-escudo:hover {
+            transform: translateY(-6px) scale(1.08);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        header h1 { margin: 0; font-size: 26px; text-transform: uppercase; letter-spacing: 1px; }
+        header p { margin: 8px 0 0 0; font-size: 15px; color: #fff8e7; font-weight: bold; }
+        nav { background-color: #002060; padding: 12px; text-align: center; }
+        nav a { color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 16px; }
+        nav a:hover { color: #f5b301; text-decoration: underline; }
+        .container { padding: 25px; max-width: 600px; margin: 20px auto; background-color: white; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); border-top: 4px solid #c8102e; }
+        .container h2 { color: #c8102e; }
+        footer { background-color: #5c3a21; color: white; text-align: center; padding: 15px; margin-top: 40px; border-top: 4px solid #f5b301; }
+        
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 15px; font-weight: bold; color: #002060; }
+        input[type="text"], input[type="email"], select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        textarea { height: 100px; resize: none; }
+        input[type="submit"] { background-color: #c8102e; color: white; padding: 12px; margin-top: 20px; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; border-bottom: 3px solid #f5b301; }
+        input[type="submit"]:hover { background-color: #002060; }
+        .img-contacto { width: 100%; max-width: 500px; height: auto; border-radius: 6px; display: block; margin: 15px auto; border: 3px solid #f5b301; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRhyFVXy36-0Xowb_FhqSNozcf6DiXn_WOzXtItIlWNaGZz4V4J1TVDV0&s=10" alt="Escudo Instituto 21 de Octubre" class="logo-escudo">
+        <h1>Contacto e Información</h1>
+        <p>Colonia 21 de Octubre, Tegucigalpa, M.D.C.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="oferta.html">Oferta Académica</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Formulario de Consultas</h2>
+        <p>Envía tus dudas a la dirección o secretaría del colegio:</p>
+
+        <form action="#" method="POST">
+            
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <label for="modalidad">Área o Grado de Interés:</label>
+            <select id="modalidad" name="modalidad">
+                <option value="finanzas">BTP en Contaduría y Finanzas</option>
+                <option value="administracion">BTP en Administración de Empresas</option>
+                <option value="informatica">BTP en Informática</option>
+                <option value="humanidades">Bachillerato en Ciencias y Humanidades</option>
+                <option value="tercer_ciclo">Tercer Ciclo de Educación Básica (7°, 8° y 9°)</option>
+                <option value="secretaria">Secretaría / Trámites Generales</option>
+            </select>
+
+            <label for="mensaje">Consulta o Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta aquí..."></textarea>
+
+            <input type="submit" value="Enviar Formulario">
+
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Tarea de Diseño Web - Creado por: Sara Pedrano</p>
+    </footer>
+
+</body>
+</html>
